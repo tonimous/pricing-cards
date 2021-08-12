@@ -1,0 +1,156 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html {
+    box-sizing: border-box;
+    font-family: monospace, sans-serif;
+}
+body {
+    display: flex;
+    background-color: #311B92;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.panel {
+    display: flex;
+    flex-direction: column;
+    background-color: #fafafa;
+    padding: 2rem 4rem;
+    width: 100%;
+    max-width: 960px;
+    border-radius: 0.3rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+.pricing-plan {
+    border-bottom: 1px solid #6262625f;
+    margin: 0.5rem 0;
+}
+.pricing-plan:nth-child(3) {
+    border-bottom: none;
+}
+.pricing-img {
+    max-width: 100%;
+    margin: 25px 0;
+}
+.pricing-header {
+    color: #707070;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+}
+.pricing-features {
+    margin: 1.5rem 0;
+    color: #B39DDB;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    font-size: 0.9rem;
+    font-weight: 100;
+}
+.pricing-features-item {
+    border-top: 1px solid #B39DDB;
+    padding: 1rem 0;
+}
+.pricing-features-item:nth-child(2) {
+    border-bottom: 1px solid #B39DDB;
+    padding: 1rem 0;
+}
+.pricing-price {
+    display: block;
+    color: #311B92;
+    font-weight: 800;
+    font-size: 2rem;
+}
+.pricing-button {
+    border: 1px solid #90A4AE;
+    border-radius: 0.3rem;
+    padding: 0.5rem 1rem;
+    margin: 00.5rem;
+    display: inline-block;
+    color: #90A4AE;
+    text-decoration: none;
+    transition: 0.4s;
+
+}
+.is-featured {
+    border: 1px solid #90A4AE;
+    border-radius: 0.3rem;
+    padding: 0.5rem 1rem;
+    margin: 00.5rem;
+    display: inline-block;
+    color: #fafafa;
+    background-color: #90A4AE;
+    text-decoration: none;
+    transition: 0.4s;
+
+}
+.pricing-button:hover, .pricing-button:focus {
+    background-color: #90A4AE;
+    color: #fafafa;
+    opacity: 0.7;
+}
+.is-featured:hover, .is-featured:focus {
+    opacity: 0.7;
+}
+
+@media (min-width: 800px) {
+    .panel {
+        flex-direction: row;
+    }
+    .pricing-plan {
+        border-bottom: none;
+        border-right: 1px solid #B39DDB;
+        padding: 1.5rem 2.5rem;
+    }
+    .pricing-plan:nth-child(3) {
+        border-right: none;
+    }
+}
